@@ -13,7 +13,7 @@ This project provides a simple yet effective pipeline to clean and normalize raw
 ## Setup
 
 1. **Clone or download this repository**
-    ``` https://github.com/alynhunzai/hjpythoncapstone ```
+    ``` https://github.com/alynhunzai/data_preprocessing_pipeline ```
 2. **Prepare your input data:**
     - Place all `.txt` files in the `data/raw/` directory
     - Create the directory if it doesn't exist:
@@ -46,8 +46,10 @@ The output JSON file contains an array of objects with `original` and `cleaned` 
 ```json
 [
   {
-     "original": "Hello, World!",
-     "cleaned": "hello world"
+      "user_id": "user_101",
+      "product_id": "prod_55A",
+      "original_review": "This laptop is AWESOME!!! I absolutely love it. <br> Fast shipping too...",
+      "cleaned_review": "this laptop is awesome i absolutely love it fast shipping too"
   }
 ]
 ```
